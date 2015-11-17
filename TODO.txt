@@ -1,0 +1,4 @@
+Requirements:
+1) find stings in my area
+2) report new sting
+3) find spesific sting
