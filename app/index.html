@@ -7,11 +7,19 @@
         <meta name="description" content="">
 
         <!-- Link tags -->
-        <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="components/menubar/menubar.css">
 
         <title>Stingray</title>
     </head>
-    <body ng-app="stingrayApp">
+    <body ng-app="stingrayApp" layout="column">
+
+        <sr-menubar></sr-menubar>
 
         <ng-view></ng-view>
 
@@ -29,20 +37,27 @@
         <!-- JQuery -->
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
+        <!-- Bootstrap -->
+
         <!-- Angular JS -->
         <script src="../bower_components/angular/angular.min.js"></script>
         <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
         <script src="../bower_components/angular-route/angular-route.min.js"></script>
-        <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
         <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
-        <script src="../bower_components/angular-material/angular-material.min.js"></script>
 
         <!-- App scripts -->
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../bower_components/bootstrap/js/transition.js"></script>
 
         <!-- Main app script -->
         <script src="app.js"></script>
 
+        <!-- Menu bar -->
+        <script src="components/menubar/menubar.directive.js"></script>
+
         <!-- Landing page -->
         <script src="components/landing/landing.controller.js"></script>
+
     </body>
 </html>

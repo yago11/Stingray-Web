@@ -12,9 +12,7 @@ angular
     .module('stingrayApp', [
         'ngResource',
         'ngRoute',
-        'ngAria',
-        'ngAnimate',
-        'ngMaterial'
+        'ngAnimate'
     ])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider

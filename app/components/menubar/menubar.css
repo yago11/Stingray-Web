@@ -1,0 +1,106 @@
+nav.navbar {
+  min-height: 75px !important;
+  line-height: 75px;
+  background-image: -webkit-linear-gradient(top, #2a323b 0, #2a323b 100%);
+  background-image: -o-linear-gradient(top, #2a323b 0, #2a323b 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a323b), to(#2a323b));
+  background-image: linear-gradient(to bottom, #2a323b 0, #2a323b 100%);
+  border-radius: 0;
+  color: white;
+  font-family: Gill Sans MT, cursive, sans-serif;
+}
+nav.navbar div.navbar-header {
+  margin-top: 10px;
+}
+nav.navbar div.navbar-header button.navbar-toggle {
+  border: 2px solid white;
+}
+nav.navbar div.navbar-header button.navbar-toggle:hover, nav.navbar div.navbar-header button.navbar-toggle:focus {
+  background-color: #212C51;
+}
+nav.navbar div.navbar-header span.icon-bar {
+  background-color: white;
+}
+nav.navbar div.navbar-header a.navbar-brand {
+  padding: 0;
+  margin-left: 0 !important;
+}
+nav.navbar div.navbar-header a.navbar-brand img#sr-brand {
+  width: 50px;
+  height: 50px;
+}
+nav.navbar div.navbar-header a.navbar-brand span.sr-menubar-title {
+  position: relative;
+  top: 10px;
+  color: white;
+  font-size: 30pt;
+  font-weight: bold;
+  text-shadow: 0 0 3px white;
+}
+nav.navbar div#sr-menubar-bars ul {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+nav.navbar div#sr-menubar-bars ul li {
+  padding: 0 10px;
+}
+nav.navbar div#sr-menubar-bars ul li a {
+  color: white;
+  font-size: 20pt;
+  border: 2px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+nav.navbar div#sr-menubar-bars > ul > li:not(.dropdown) a:not(:focus):hover {
+  color: #455c99;
+}
+nav.navbar div#sr-menubar-bars > ul > li a span.glyphicon {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  font-size: 16pt;
+}
+nav.navbar div#sr-menubar-bars > ul > li.active > a, nav.navbar div#sr-menubar-bars > ul > li.dropdown > a:hover,
+nav.navbar div#sr-menubar-bars > ul > li.dropdown > a:focus,
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:hover,
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:hover a {
+  background: #384a79;
+  border: 2px solid #384a79;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 3px 2px #384a79 inset;
+  box-shadow: 0 0 3px 2px #384a79 inset;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown a, nav.navbar div#sr-menubar-bars > ul > li.dropdown:focus a {
+  background-image: none;
+  background: transparent;
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:first-child:hover {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:last-child:hover {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu {
+  background-image: -webkit-linear-gradient(top, #2a323b 0, #2a323b 100%);
+  background-image: -o-linear-gradient(top, #2a323b 0, #2a323b 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a323b), to(#2a323b));
+  background-image: linear-gradient(to bottom, #2a323b 0, #2a323b 100%);
+  border-radius: 6px;
+  padding: 0;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu li.divider {
+  padding: 0;
+  margin: 0;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu li {
+  background-image: none;
+}
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu li a {
+  background-image: none;
+  padding: 0;
+}
