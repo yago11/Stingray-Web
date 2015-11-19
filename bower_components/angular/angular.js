@@ -10949,7 +10949,7 @@ function $InterpolateProvider() {
      * ####Escaped Interpolation
      * $interpolate provides a mechanism for escaping interpolation markers. Start and end markers
      * can be escaped by preceding each of their characters with a REVERSE SOLIDUS U+005C (backslash).
-     * It will be rendered as a regular start/end marker, and will not be interpreted as an expression
+     * It will be rendered as a regular start/end markerPosition, and will not be interpreted as an expression
      * or binding.
      *
      * This enables web-servers to prevent script injection attacks and defacing attacks, to some
@@ -18888,7 +18888,7 @@ var DATE_FORMATS_SPLIT = /((?:[^yMdHhmsaZEwG']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|
  *   * `'ss'`: Second in minute, padded (00-59)
  *   * `'s'`: Second in minute (0-59)
  *   * `'sss'`: Millisecond in second, padded (000-999)
- *   * `'a'`: AM/PM marker
+ *   * `'a'`: AM/PM markerPosition
  *   * `'Z'`: 4 digit (+sign) representation of the timezone offset (-1200-+1200)
  *   * `'ww'`: Week of year, padded (00-53). Week 01 is the week with the first Thursday of the year
  *   * `'w'`: Week of year (0-53). Week 1 is the week with the first Thursday of the year

@@ -8,12 +8,14 @@
 
         <!-- Link tags -->
         <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
-
+        <link rel="stylesheet" href="components/srMap/srMap.css">
         <title>Stingray</title>
     </head>
     <body ng-app="stingrayApp">
 
-        <ng-view></ng-view>
+        <!--<ng-view></ng-view>-->
+
+        <sr-map></sr-map>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
          <script>
@@ -43,6 +45,12 @@
         <script src="app.js"></script>
 
         <!-- Landing page -->
-        <script src="components/landing/landing.controller.js"></script>
+
+        <!-- Map -->
+        <script src="components/srMap/srMap.controller.js"></script>
+        <script src="components/srMap/srMap.directive.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzCoQh4sMzx_j4HQquCOHE-bD-kv3s3Bg"
+                ></script>
+        <script src="ngMap.js"></script>`
     </body>
 </html>

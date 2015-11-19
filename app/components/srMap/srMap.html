@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-6">
+    <map zoom="15" center="current"
+         zoom-to-include-markers='auto'
+      >
+      <marker ng-repeat="marker in vm.markers" position="{{marker.langtitude}}, {{marker.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"/>
+      <marker position="current" animation="Animation.BOUNCE"/>
+      <shape name="circle" radius="{{vm.radius}}" center="[40.74,-74.18]"/>
+      <control name="overviewMap" opened="false" />
+    </map>
+  </div>
+  <div class="col-md-6">
+    {{vm.selectedMarker}}
+  </div>
+</div>
