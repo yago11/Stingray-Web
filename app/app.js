@@ -19,7 +19,8 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/',{
-        templateUrl: 'app/components/landing/landing.html'
+        templateUrl: 'components/landing/landing.html',
+        controller: 'landingController'
       })
       .otherwise({
         redirectTo: '/'
