@@ -1,1 +1,10 @@
-saefasef
+<section class="container-fluid sr-main">
+    <section class="sr-block" ng-repeat="block in vm.blocks">
+        <div class="sr-block-image">
+            <img src="{{block.image}}" alt="Stingray" />
+        </div>
+        <div class="sr-block-text">
+            <p>{{block.article}}</p>
+        </div>
+    </section>
+</section>

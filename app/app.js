@@ -18,7 +18,8 @@ angular
         $routeProvider
           .when('/',{
             templateUrl: 'components/landing/landing.html',
-            controller: 'landingController'
+            controller: 'landingController',
+            controllerAs: 'vm'
           })
           .otherwise({
             redirectTo: '/'
