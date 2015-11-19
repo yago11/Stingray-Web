@@ -9,19 +9,25 @@
  * Main module of the application.
  */
 angular
-  .module('stingrayApp', [
-    'ngAnimate',
-    'ngResource',
-    'ngRoute',
-    'ngMaterial'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/',{
-        templateUrl: 'components/landing/landing.html',
-        controller: 'landingController'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    .module('stingrayApp', [
+        'ngResource',
+        'ngRoute',
+        'ngAria',
+        'ngAnimate',
+        'ngMaterial'
+    ])
+    .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+        $routeProvider
+          .when('/',{
+            templateUrl: 'components/landing/landing.html',
+            controller: 'landingController'
+          })
+          .otherwise({
+            redirectTo: '/'
+          });
+
+        $locationProvider.html5Mode({
+          enabled: true,
+          requireBase: false
+        });
+    }]);

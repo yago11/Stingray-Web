@@ -5,22 +5,10 @@
     .module('stingrayApp')
     .controller('landingController', landingController);
 
-  landingController.$inject = [''];
-
-  /* @ngInject */
+  landingController.$inject = [];
   function landingController() {
     var vm = this;
     vm.title = 'landingController';
-
-    activate();
-
-    ////////////////ss
-
-    function activate() {
-
-    }
   }
 
 })();
-
-
