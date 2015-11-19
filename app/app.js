@@ -13,7 +13,6 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'ngSanitize',
     'ngMaterial'
   ])
   .config(function ($routeProvider) {
