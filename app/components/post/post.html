@@ -1,8 +1,13 @@
-<section class="sr-main container jumbotron row">
-    <div class="sr-map col-md-6">
-    
+<section class="sr-main container">
+  <form>
+    <div class="form-group">
+      <h2>
+        <label for="sting-name">Post a Sting</label>
+      </h2>
+      <input type="text" class="form-control" id="sting-name" placeholder="Sting">
     </div>
-    <div class="sr-description col-md-6">
-
-    </div>
+    <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+    <sr-map></sr-map>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </section>

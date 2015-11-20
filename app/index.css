@@ -17,3 +17,9 @@ body {
 ng-view {
     margin-top: 75px;
 }
+section.sr-main {
+    margin-top: 0;
+}
+section.sr-main-space {
+    margin-top: 5vh;
+}

@@ -18,14 +18,14 @@
         (maybe even for free). So stop waisting your cash and start "stinging" your way through the modern economy.'
     });
     vm.blocks.push({
-        image: 'images/Stingray.png',
+        image: 'images/Devices.png',
         article: 'Wether you use a pc, a mac, a mobile phone or any other device, you can visit Stingray and search for great stings for you to explore \
         and use to maximize your salary. Let\'s say your really want a burger right now and apperently there is a great place just around the corner, \
         you never knew about which offers a 20% percent discount to soldiers. Take out your phone and let Stingray find it for you and save you couple of shekels. \
         You\'re welcome!'
     });
     vm.blocks.push({
-        image: 'images/Stingray.png',
+        image: 'images/Business.png',
         article: 'In case you are a bussiness owner, who supports soldiers or just a good samaritan and you are interested to promote your business for this \
         purpose, contact us and we\'ll help you in your cause. Any activity of this sort is very welcome :)'
     });

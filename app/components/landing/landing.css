@@ -22,6 +22,13 @@ section.sr-main section.sr-block {
 section.sr-main section.sr-block:nth-child(even) {
   background: #a2d0ee;
 }
+section.sr-main section.sr-block:nth-child(even) div.sr-block-image {
+    order: 2;
+}
+section.sr-main section.sr-block:nth-child(even) div.sr-block-text {
+    margin: 0;
+    margin-right: 5%;
+}
 section.sr-main section.sr-block div.sr-block-image img {
   width: 14vw;
 }
