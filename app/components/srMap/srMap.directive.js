@@ -13,7 +13,9 @@
       restrict: 'E',
       templateUrl: 'components/srMap/srMap.html',
       replace: true,
-      scope: {},
+      scope: {
+        searchQuery: '='
+      },
       controller: 'srMapController',
       controllerAs: 'vm',
       bindToController: true
