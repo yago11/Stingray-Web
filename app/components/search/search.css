@@ -1,3 +1,14 @@
 section.sr-main {
 
 }
+section.sr-main div.sr-search {
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+}
+section.sr-main section.sr-results {
+    margin-top: 5vh;
+}
+section.sr-main section.sr-results h3 {
+    display: inline-block;
+}

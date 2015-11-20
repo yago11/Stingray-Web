@@ -1,8 +1,18 @@
-<section class="sr-main container jumbotron row">
-    <div class="sr-map col-md-6">
-
+<section class="sr-main container row">
+  <div class="input-group sr-search">
+    <input type="text" class="form-control" placeholder="Search for..." ng-model="vm.place">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button" ng-click="vm.searchPlace(vm.place)">Go!</button>
+    </span>
+  </div>
+  <section class="sr-results">
+    <div class="list-group">
+      <a href="#" class="list-group-item" ng-repeat="place in vm.results">
+        <h2 class="list-group-item-heading">{{place.name}}</h4>
+        <p class="list-group-item-text">{{place.description}}</p>
+        <h3><span class="label label-primary">langtitude: {{place.langtitude}}</span></h3>
+        <h3><span class="label label-primary">longtitude: {{place.longtitude}}</span></h3>
+      </a>
     </div>
-    <div class="sr-description col-md-6">
-
-    </div>
+  </section>
 </section>

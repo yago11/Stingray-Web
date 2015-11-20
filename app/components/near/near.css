@@ -1,3 +1,18 @@
 section.sr-main {
-    
+    margin-top: 10vh;
+}
+
+section.sr-main div.sr-map {
+    padding: 0;
+    border: 3px solid #212C51;
+    border-radius: 2px;
+}
+
+section.sr-main div.sr-description {
+    font-family: Gill Sans MT, cursive, sans-serif;
+    font-size: 16pt;
+}
+
+section.sr-main div.sr-placement span {
+    display: inline-block;
 }

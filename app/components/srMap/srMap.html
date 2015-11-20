@@ -1,23 +1,20 @@
-<div class="row">
-  <div class="col-md-6">
+<div>
+  <div class="col-md-6 col-sm-12 sr-map">
     <map zoom="15" center="current"
          zoom-to-include-markers='auto'>
-      <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"></marker>
-      <marker position="current" animation="Animation.BOUNCE"></marker>
-
-      </map>
+      <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"/>
+      <marker position="current" animation="Animation.BOUNCE"/>
+      <shape name="circle" radius="{{vm.radius}}" center="[40.74,-74.18]"/>
+      <control name="overviewMap" opened="false" />
+    </map>
+  </div>
+  <div class="col-md-6 col-sm-12 sr-description">
+    <div>
+      description: <span>{{vm.selectedSting.description}}</span>
     </div>
-    <div class="col-md-6">
-      <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="submit" type="button" value="Geocode">
-      <div>
-        description: <span>{{vm.selectedSting.description}}</span>
-      </div>
-      <div>
-        <span>langtitude: {{vm.selectedSting.Place.langtitude}}</span>
-        <span>longtitude: {{vm.selectedSting.Place.longtitude}}</span>
-      <span>Address: {{vm.selectedSting.address}}</span>
-
+    <div class="sr-placement">
+      <h3><span class="label label-primary">langtitude: {{vm.selectedSting.Place.langtitude}}</span></h3>
+      <h3><span class="label label-primary">longtitude: {{vm.selectedSting.Place.longtitude}}</span></h3>
     </div>
   </div>
 </div>

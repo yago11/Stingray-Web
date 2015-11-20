@@ -12,6 +12,7 @@
     return {
       restrict: 'E',
       templateUrl: 'components/srMap/srMap.html',
+      replace: true,
       scope: {},
       controller: 'srMapController',
       controllerAs: 'vm',
@@ -20,6 +21,3 @@
   }
 
 })();
-
-
-
