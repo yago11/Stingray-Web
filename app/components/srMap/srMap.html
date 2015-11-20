@@ -1,20 +1,29 @@
-<div>
-  <div class="col-md-6 col-sm-12 sr-map">
-    <map zoom="15" center="current"
-         zoom-to-include-markers='auto'>
-      <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"/>
-      <marker position="current" animation="Animation.BOUNCE"/>
-      <shape name="circle" radius="{{vm.radius}}" center="[40.74,-74.18]"/>
-      <control name="overviewMap" opened="false" />
+<div class="row">
+  <div class="col-md-6 col-xs-12 sr-map">
+    <map zoom="15" center="current" zoom-to-include-markers='auto'>
+      <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"></marker>
+      <marker position="current" animation="Animation.BOUNCE"></marker>
     </map>
   </div>
-  <div class="col-md-6 col-sm-12 sr-description">
-    <div>
-      description: <span>{{vm.selectedSting.description}}</span>
-    </div>
-    <div class="sr-placement">
-      <h3><span class="label label-primary">langtitude: {{vm.selectedSting.Place.langtitude}}</span></h3>
-      <h3><span class="label label-primary">longtitude: {{vm.selectedSting.Place.longtitude}}</span></h3>
+  <div class="col-md-6 col-xs-12 sr-description">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h1 class="panel-title">
+          <span>Address: {{vm.selectedSting.address}}</span>
+        </h1>
+      </div>
+      <div class="panel-body">
+        <h3>Description:</h3> {{vm.selectedSting.description}}
+        <h3 id="sr-price">Price:</h3> {{vm.selectedSting.price}}
+        <div class="sr-placement">
+          <h3>
+            <span class="label label-primary">langtitude: {{vm.selectedSting.Place.langtitude}}</span>
+          </h3>
+          <h3>
+            <span class="label label-primary">longtitude: {{vm.selectedSting.Place.longtitude}}</span>
+          </h3>
+        </div>
+      </div>
     </div>
   </div>
 </div>

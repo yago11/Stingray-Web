@@ -1,6 +1,3 @@
-section.sr-main {
-
-}
 section.sr-main div.sr-search {
     width: 60%;
     left: 50%;
@@ -11,4 +8,10 @@ section.sr-main section.sr-results {
 }
 section.sr-main section.sr-results h3 {
     display: inline-block;
+}
+section.sr-main .input-group + div.row  .sr-map {
+    margin-top: 10vh;
+}
+section.sr-main .input-group + div.row .sr-description {
+    display: none;
 }

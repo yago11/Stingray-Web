@@ -1,5 +1,7 @@
-section.sr-main {
-    margin-top: 10vh;
+@media screen and (max-width: 720px) {
+    section.sr-main-space div.sr-description {
+        margin-top: 5vh;
+    }
 }
 
 section.sr-main div.sr-map {
@@ -11,6 +13,15 @@ section.sr-main div.sr-map {
 section.sr-main div.sr-description {
     font-family: Gill Sans MT, cursive, sans-serif;
     font-size: 16pt;
+}
+
+section.sr-main div.sr-description .panel-title {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+section.sr-main div.sr-placement h3 {
+    display: inline-block;
 }
 
 section.sr-main div.sr-placement span {

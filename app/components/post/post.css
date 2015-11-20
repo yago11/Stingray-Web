@@ -1,3 +1,32 @@
-section.sr-main {
-
+@media screen and (max-width: 720px) {
+    section.sr-main form .sr-map {
+        width: 60%;
+    }
+}
+section.sr-main form {
+  position: relative;
+  left: 50%;
+  margin-left: -40%;
+}
+section.sr-main form .sr-map {
+  margin-top: 5vh;
+  margin-left: 5vh;
+}
+section.sr-main form .form-control {
+  width: 52vw;
+  height: 30pt;
+  line-height: 30pt;
+  border-radius: 2px;
+}
+section.sr-main form textarea.form-control {
+  height: 180pt;
+}
+section.sr-main form .sr-description {
+  display: none;
+}
+section.sr-main form button[type="submit"] {
+  margin-top: 5vh;
+  font-size: 14pt;
+  font-weight: bold;
+  font-variant: small-caps;
 }
