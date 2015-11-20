@@ -2,19 +2,22 @@
   <div class="col-md-6">
     <map zoom="15" center="current"
          zoom-to-include-markers='auto'>
-      <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"/>
-      <marker position="current" animation="Animation.BOUNCE"/>
-      <shape name="circle" radius="{{vm.radius}}" center="[40.74,-74.18]"/>
-      <control name="overviewMap" opened="false" />
+      <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"></marker>
+      <marker position="current" animation="Animation.BOUNCE"></marker>
+
     </map>
   </div>
   <div class="col-md-6">
+    <input id="address" type="textbox" value="Sydney, NSW">
+    <input id="submit" type="button" value="Geocode">
     <div>
       description: <span>{{vm.selectedSting.description}}</span>
     </div>
     <div>
       <span>langtitude: {{vm.selectedSting.Place.langtitude}}</span>
       <span>longtitude: {{vm.selectedSting.Place.longtitude}}</span>
+      <span>Address: {{vm.selectedSting.address}}</span>
+      {{vm.position}}
     </div>
   </div>
 </div>

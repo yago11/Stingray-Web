@@ -17,7 +17,8 @@
     vm.getMarketsPositions = getMarketsPositions;
     vm.showDetails = showDetails;
     vm.selectedSting = {};
-    vm.radius = 1000;
+    vm.geocoder = new google.maps.Geocoder();
+    vm.infowindow = new google.maps.InfoWindow;
 
     activate();
 
@@ -25,8 +26,9 @@
 
     function activate() {
       getMarketsPositions();
-
-
+      NgMap.getMap().then(function(map){
+        vm.map = map;
+      });
     }
 
     function getMarketsPositions() {
@@ -53,7 +55,6 @@
               }
             }
           });
-
         }
       });
     }
@@ -63,8 +64,22 @@
       for(var i = 0; i < vm.markers.length; i++){
         if(vm.selectedSting.Place == vm.markers[i].Place.id) {
           vm.selectedSting.Place = vm.markers[i].Place;
+          geocodeLatLng(vm.geocoder, vm.markers[i].Place.langtitude, vm.markers[i].Place.longtitude);
         }
       }
+    }
+
+    function geocodeLatLng(geocoder, langtitude, longtitude) {
+      var latlng = {lat: langtitude, lng: longtitude};
+      geocoder.geocode({'location': latlng}, function(results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+          if (results[1]) {
+            vm.selectedSting.address = results[1].formatted_address;
+          } else {
+          }
+        } else {
+        }
+      });
     }
   }
 
