@@ -1,4 +1,4 @@
-(function () {
+(function() {
   'use strict';
 
   angular
@@ -6,8 +6,9 @@
     .controller('nearController', nearController);
 
   nearController.$inject = [];
+
   function nearController() {
     var vm = this;
 
-
+  }
 })();

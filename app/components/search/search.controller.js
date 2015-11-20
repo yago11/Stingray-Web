@@ -1,4 +1,4 @@
-(function () {
+(function() {
   'use strict';
 
   angular
@@ -9,5 +9,5 @@
   function searchController() {
     var vm = this;
 
-
+  }
 })();

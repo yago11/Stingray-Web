@@ -1,4 +1,4 @@
-(function () {
+(function() {
   'use strict';
 
   angular
@@ -6,8 +6,9 @@
     .controller('postController', postController);
 
   postController.$inject = [];
+
   function postController() {
     var vm = this;
 
-
+  }
 })();
