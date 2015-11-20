@@ -64,7 +64,7 @@ nav.navbar div#sr-menubar-bars ul li a {
   transition: all .3s ease-in-out;
 }
 nav.navbar div#sr-menubar-bars > ul > li:not(.dropdown) a:not(:focus):hover {
-  color: #455c99;
+  color: #296395;
 }
 nav.navbar div#sr-menubar-bars > ul > li a span.glyphicon {
   margin: 0;
@@ -76,11 +76,11 @@ nav.navbar div#sr-menubar-bars > ul > li.active > a,
 nav.navbar div#sr-menubar-bars > ul > li.dropdown > a:hover,
 nav.navbar div#sr-menubar-bars > ul > li.dropdown > a:focus,
 nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:hover a {
-  background: #384a79;
-  border: 2px solid #384a79;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 0 3px 2px #384a79 inset;
-  box-shadow: 0 0 3px 2px #384a79 inset;
+    background: #296294;
+    border: 2px solid #2B679B;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 3px 2px #296395 inset;
+    box-shadow: 0 0 3px 2px #296395 inset;
 }
 nav.navbar div#sr-menubar-bars > ul > li.dropdown a, nav.navbar div#sr-menubar-bars > ul > li.dropdown:focus a {
   background-image: none;

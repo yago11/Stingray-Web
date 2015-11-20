@@ -1,5 +1,5 @@
 <div>
-  <div class="col-md-6 sr-map">
+  <div class="col-md-6 col-sm-12 sr-map">
     <map zoom="15" center="current"
          zoom-to-include-markers='auto'>
       <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"/>
@@ -8,13 +8,13 @@
       <control name="overviewMap" opened="false" />
     </map>
   </div>
-  <div class="col-md-6 sr-description">
+  <div class="col-md-6 col-sm-12 sr-description">
     <div>
       description: <span>{{vm.selectedSting.description}}</span>
     </div>
     <div class="sr-placement">
-      <span class="label label-primary">langtitude: {{vm.selectedSting.Place.langtitude}}</span>
-      <span class="label label-primary">longtitude: {{vm.selectedSting.Place.longtitude}}</span>
+      <h3><span class="label label-primary">langtitude: {{vm.selectedSting.Place.langtitude}}</span></h3>
+      <h3><span class="label label-primary">longtitude: {{vm.selectedSting.Place.longtitude}}</span></h3>
     </div>
   </div>
 </div>

@@ -12,7 +12,7 @@
     vm.blocks = [];
 
     vm.blocks.push({
-        image: 'images/Stingray.png',
+        image: 'images/Coin.png',
         article: 'Stingray is an app created for us soldiers, who are suffering from low salary and go through a rough patch having so little cash to spend. \
         Stingray allows you to to find \'stings\' around you, great opportunities to aqcuire something for a special price introduced to soldiers only \
         (maybe even for free). So stop waisting your cash and start "stinging" your way through the modern economy.'
