@@ -28,12 +28,12 @@ angular
             controllerAs: 'vm'
           })
           .when('/search',{
-            templateUrl: 'components/near/near.html',
+            templateUrl: 'components/search/search.html',
             controller: 'searchController',
             controllerAs: 'vm'
           })
           .when('/post',{
-            templateUrl: 'components/near/near.html',
+            templateUrl: 'components/post/post.html',
             controller: 'postController',
             controllerAs: 'vm'
           })
