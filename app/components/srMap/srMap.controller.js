@@ -16,7 +16,7 @@
       };
     vm.getMarketsPositions = getMarketsPositions;
     vm.showDetails = showDetails;
-    vm.selectedMarker = {};
+    vm.selectedSting = {};
     vm.radius = 1000;
 
     activate();
@@ -35,15 +35,36 @@
         headers: {
           'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
         },
-        url: 'https://api.backand.com:443/1/objects/Place'
+        url: 'https://api.backand.com:443/1/objects/Sting'
       }).then(function(response){
         vm.markers = response.data.data;
-        vm.selectedMarker = vm.markers[0];
+        var i;
+        for(i = 0; i < vm.markers.length; i++){
+          $http({
+            method: 'GET',
+            headers: {
+              'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
+            },
+            url: 'https://api.backand.com:443/1/objects/Place/' + vm.markers[i].Place
+          }).then(function(response){
+            for(var j = 0; j < vm.markers.length; j++){
+              if(response.data.id == vm.markers[j].Place){
+                vm.markers[j].Place = response.data;
+              }
+            }
+          });
+
+        }
       });
     }
 
     function showDetails(evt){
-      vm.selectedMarker = this.marker;
+      vm.selectedSting = this.marker;
+      for(var i = 0; i < vm.markers.length; i++){
+        if(vm.selectedSting.Place == vm.markers[i].Place.id) {
+          vm.selectedSting.Place = vm.markers[i].Place;
+        }
+      }
     }
   }
 
