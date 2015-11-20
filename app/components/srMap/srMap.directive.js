@@ -14,7 +14,8 @@
       templateUrl: 'components/srMap/srMap.html',
       scope: {
         searchQuery: '=',
-        type: '='
+        lang: '=',
+        long: '='
       },
       controller: 'srMapController',
       controllerAs: 'vm',

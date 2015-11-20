@@ -12,7 +12,16 @@
 
     vm.place = '';
     vm.result = [];
+    vm.long = 0;
+    vm.lang = 0;
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        vm.long = position.coords.longitude;
+        vm.lang = position.coords.latitude;
+      });
+    }
     vm.searchPlace = searchPlace;
+    vm.changeLocation = changeLocation;
 
     function getPlace(keyword) {
       return $http({
@@ -31,9 +40,14 @@
 
     function searchPlace(keyword) {
       getPlace(keyword).then(function(results) {
-          console.log(results);
+        console.log(results);
         vm.results = results.data;
       });
+    }
+
+    function changeLocation(lang, long) {
+      vm.lang = lang;
+      vm.long = long;
     }
 
   }
