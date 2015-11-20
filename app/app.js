@@ -13,7 +13,8 @@ angular
         'ngResource',
         'ngRoute',
         'ngMap',
-        'ngAnimate'
+        'ngAnimate',
+        'ngFacebook'
     ])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
