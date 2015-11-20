@@ -15,7 +15,7 @@ section.sr-main section.sr-block {
   justify-content: center;
   align-content: center;
   align-items: center;
-  min-height: 30vh;
+  min-height: 40vh;
   padding: 3vh 0;
   width: 100%;
   margin: 0;
@@ -23,16 +23,17 @@ section.sr-main section.sr-block {
 section.sr-main section.sr-block:nth-child(even) {
   background: #a2d0ee;
 }
-section.sr-main section.sr-block div {}
 section.sr-main section.sr-block div.sr-block-image img {
-  width: 10vw;
+  width: 14vw;
 }
 section.sr-main section.sr-block div.sr-block-text {
-    padding: 0 5%;
+  width: 60%;
+  margin-left: 5%;
   display: inline-block;
   font-family: Gill Sans MT, cursive, sans-serif;
   font-size: 16pt;
 }
 section.sr-main section.sr-block div.sr-block-text > p {
+    text-align: justify;
   height: 100%;
 }

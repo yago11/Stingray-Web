@@ -88,11 +88,11 @@ nav.navbar div#sr-menubar-bars > ul > li.dropdown a, nav.navbar div#sr-menubar-b
   border: 2px solid transparent;
   box-shadow: none;
 }
-nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:first-child:hover {
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:first-child a:hover {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:last-child:hover {
+nav.navbar div#sr-menubar-bars > ul > li.dropdown ul.dropdown-menu > li:last-child a:hover {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
