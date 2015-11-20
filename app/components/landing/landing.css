@@ -4,7 +4,6 @@ section.sr-main {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  margin-top: 75px;
   padding: 0;
 }
 section.sr-main section.sr-block {
