@@ -15,3 +15,7 @@ section.sr-main .input-group + div.row .sr-map {
 section.sr-main .input-group + div.row .sr-description {
     display: none;
 }
+
+#search-sting {
+  margin-bottom: 20px;
+}

@@ -4,11 +4,11 @@
       <h2>
         <label for="sting-name">Post a Sting</label>
       </h2>
-      <input type="text" class="form-control" id="sting-name" placeholder="Sting">
+      <input type="text" id="sting-composer-name" class="form-control" placeholder="name" ng-model="vm.sting.name" />
+      <input type="text" id="sting-composer-price" class="form-control" placeholder="price" ng-model="vm.sting.price" />
+      <!--<input type="file" id="fileUpload">-->
+      <textarea type="text" class="form-control" row="3" id="sting-name" placeholder="description" ng-model="vm.sting.description" ></textarea>
     </div>
-    <textarea class="form-control" rows="3" placeholder="Description"></textarea>
-    <sr-map lang="vm.lang" long="vm.long"></sr-map>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" ng-click="vm.composeSting(vm.sting)" class="btn btn-primary">submit</button>
   </form>
 </section>
-<sting-composer></sting-composer>

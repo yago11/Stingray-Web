@@ -1,18 +1,18 @@
 <section class="sr-main sr-main-space container row">
-  <div class="input-group sr-search">
-    <input type="text" class="form-control" placeholder="Search for..." ng-model="vm.place">
+  <div class="input-group sr-search" id="search-sting">
+    <input type="text" class="form-control" placeholder="Search for..." ng-model="vm.sting">
     <span class="input-group-btn">
-      <button class="btn btn-primary" type="button" ng-click="vm.searchPlace(vm.place)">Go!</button>
+      <button class="btn btn-primary" type="button" ng-click="vm.searchSting(vm.sting)">Go!</button>
     </span>
   </div>
   <sr-map search-query="vm.results" lang="vm.lang" long="vm.long"></sr-map>
   <section class="sr-results">
     <div class="list-group">
-      <a href="#" class="list-group-item" ng-repeat="place in vm.results" ng-click="vm.changeLocation(place.langtitude, place.longtitude)">
-        <h2 class="list-group-item-heading">{{place.name}}</h4>
-        <p class="list-group-item-text">{{place.description}}</p>
-        <h3><span class="label label-primary">langtitude: {{place.langtitude}}</span></h3>
-        <h3><span class="label label-primary">longtitude: {{place.longtitude}}</span></h3>
+      <a href="#" class="list-group-item" ng-repeat="result in vm.results" ng-click="vm.changeLocation(result.Place.langtitude, result.Place.longtitude)">
+        <h2 class="list-group-item-heading">{{result.description}}</h2>
+        <p class="list-group-item-text">price: {{result.price}}</p>
+        <h3><span class="label label-primary">langtitude: {{result.Place.langtitude}}</span></h3>
+        <h3><span class="label label-primary">longtitude: {{result.Place.longtitude}}</span></h3>
       </a>
     </div>
   </section>

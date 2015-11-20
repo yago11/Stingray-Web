@@ -10,7 +10,7 @@
   function searchController($http) {
     var vm = this;
 
-    vm.place = '';
+    vm.sting = '';
     vm.result = [];
     vm.long = 0;
     vm.lang = 0;
@@ -20,13 +20,13 @@
         vm.lang = position.coords.latitude;
       });
     }
-    vm.searchPlace = searchPlace;
+    vm.searchSting = searchSting;
     vm.changeLocation = changeLocation;
 
-    function getPlace(keyword) {
+    function getSting(keyword) {
       return $http({
         method: 'GET',
-        url: 'https://api.backand.com/1/query/data/SearchPlace',
+        url: 'https://api.backand.com/1/query/data/SearchSting',
         headers: {
           AnonymousToken: '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
         },
@@ -38,10 +38,26 @@
       });
     }
 
-    function searchPlace(keyword) {
-      getPlace(keyword).then(function(results) {
-        console.log(results);
+    function searchSting(keyword) {
+      getSting(keyword).then(function(results) {
         vm.results = results.data;
+        console.log(vm.results);
+        var i;
+        for (i = 0; i < vm.results.length; i++) {
+          $http({
+            method: 'GET',
+            headers: {
+              'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
+            },
+            url: 'https://api.backand.com:443/1/objects/Place/' + vm.results[i].Place
+          }).then(function (response) {
+            for (var j = 0; j < vm.results.length; j++) {
+              if (response.data.id == vm.results[j].Place) {
+                vm.results[j].Place = response.data;
+              }
+            }
+          });
+        }
       });
     }
 
