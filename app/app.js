@@ -12,6 +12,7 @@ angular
     .module('stingrayApp', [
         'ngResource',
         'ngRoute',
+<<<<<<< HEAD
         'ngAnimate'
     ])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -39,6 +40,15 @@ angular
           .otherwise({
             redirectTo: '/'
           });
+=======
+        'ngAria',
+        'ngAnimate',
+        'ngMaterial',
+        'ngMap'
+    ])
+    .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+
+>>>>>>> 89fccb39cc342e82f3ffd1e12d3b2f5858910ecd
 
         $locationProvider.html5Mode({
           enabled: true,
