@@ -5,10 +5,10 @@
       <button class="btn btn-primary" type="button" ng-click="vm.searchPlace(vm.place)">Go!</button>
     </span>
   </div>
-  <sr-map search-query="vm.results"></sr-map>
+  <sr-map search-query="vm.results" lang="vm.lang" long="vm.long"></sr-map>
   <section class="sr-results">
     <div class="list-group">
-      <a href="#" class="list-group-item" ng-repeat="place in vm.results">
+      <a href="#" class="list-group-item" ng-repeat="place in vm.results" ng-click="vm.changeLocation(place.langtitude, place.longtitude)">
         <h2 class="list-group-item-heading">{{place.name}}</h4>
         <p class="list-group-item-text">{{place.description}}</p>
         <h3><span class="label label-primary">langtitude: {{place.langtitude}}</span></h3>

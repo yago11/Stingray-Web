@@ -1,7 +1,7 @@
 @media screen and (max-width: 720px) {
-    section.sr-main form .sr-map {
-        width: 60%;
-    }
+  section.sr-main form .sr-map {
+    width: 60%;
+  }
 }
 section.sr-main form {
   position: relative;
@@ -9,8 +9,9 @@ section.sr-main form {
   margin-left: -40%;
 }
 section.sr-main form .sr-map {
+  width: 60%;
   margin-top: 5vh;
-  margin-left: 5vh;
+  margin-left: 2vh;
 }
 section.sr-main form .form-control {
   width: 52vw;
