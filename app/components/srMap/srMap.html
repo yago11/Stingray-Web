@@ -5,19 +5,19 @@
       <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"></marker>
       <marker position="current" animation="Animation.BOUNCE"></marker>
 
-    </map>
-  </div>
-  <div class="col-md-6">
-    <input id="address" type="textbox" value="Sydney, NSW">
-    <input id="submit" type="button" value="Geocode">
-    <div>
-      description: <span>{{vm.selectedSting.description}}</span>
+      </map>
     </div>
-    <div>
-      <span>langtitude: {{vm.selectedSting.Place.langtitude}}</span>
-      <span>longtitude: {{vm.selectedSting.Place.longtitude}}</span>
+    <div class="col-md-6">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+      <div>
+        description: <span>{{vm.selectedSting.description}}</span>
+      </div>
+      <div>
+        <span>langtitude: {{vm.selectedSting.Place.langtitude}}</span>
+        <span>longtitude: {{vm.selectedSting.Place.longtitude}}</span>
       <span>Address: {{vm.selectedSting.address}}</span>
-      {{vm.position}}
+
     </div>
   </div>
 </div>
