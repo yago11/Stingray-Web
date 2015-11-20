@@ -32,31 +32,33 @@
     }
 
     function getMarketsPositions() {
-      $http({
-        method: 'GET',
-        headers: {
-          'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
-        },
-        url: 'https://api.backand.com:443/1/objects/Sting'
-      }).then(function(response){
-        vm.markers = response.data.data;
-        var i;
-        for(i = 0; i < vm.markers.length; i++){
-          $http({
-            method: 'GET',
-            headers: {
-              'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
-            },
-            url: 'https://api.backand.com:443/1/objects/Place/' + vm.markers[i].Place
-          }).then(function(response){
-            for(var j = 0; j < vm.markers.length; j++){
-              if(response.data.id == vm.markers[j].Place){
-                vm.markers[j].Place = response.data;
+      //if(vm.type == 'near') {
+        $http({
+          method: 'GET',
+          headers: {
+            'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
+          },
+          url: 'https://api.backand.com:443/1/objects/Sting'
+        }).then(function (response) {
+          vm.markers = response.data.data;
+          var i;
+          for (i = 0; i < vm.markers.length; i++) {
+            $http({
+              method: 'GET',
+              headers: {
+                'AnonymousToken': '23fd826e-e4d1-41a6-a91c-45e6ab6d213f'
+              },
+              url: 'https://api.backand.com:443/1/objects/Place/' + vm.markers[i].Place
+            }).then(function (response) {
+              for (var j = 0; j < vm.markers.length; j++) {
+                if (response.data.id == vm.markers[j].Place) {
+                  vm.markers[j].Place = response.data;
+                }
               }
-            }
-          });
-        }
-      });
+            });
+          }
+        });
+      //}
     }
 
     function showDetails(evt){

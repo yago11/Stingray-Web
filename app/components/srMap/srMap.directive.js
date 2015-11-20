@@ -12,9 +12,9 @@
     return {
       restrict: 'E',
       templateUrl: 'components/srMap/srMap.html',
-      replace: true,
       scope: {
-        searchQuery: '='
+        searchQuery: '=',
+        type: '='
       },
       controller: 'srMapController',
       controllerAs: 'vm',

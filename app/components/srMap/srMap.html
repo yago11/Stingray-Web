@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-6 col-xs-12 sr-map">
-    <map zoom="15" center="current" zoom-to-include-markers='auto'>
+    <map zoom="15" center="current">
       <marker ng-repeat="marker in vm.markers" position="{{marker.Place.langtitude}}, {{marker.Place.longtitude}}" on-click="vm.showDetails()" marker="{{marker}}"></marker>
       <marker position="current" animation="Animation.BOUNCE"></marker>
     </map>
