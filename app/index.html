@@ -1,78 +1,87 @@
 <!doctype html>
 <html>
-    <head lang="en">
 
-        <!-- Meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="">
+<head lang="en">
 
-        <!-- Link tags -->
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="">
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- Link tags -->
 
-        <!-- App styles -->
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="components/menubar/menubar.css">
-        <link rel="stylesheet" href="components/landing/landing.css">
-        <link rel="stylesheet" href="components/near/near.css">
-        <link rel="stylesheet" href="components/search/search.css">
-        <link rel="stylesheet" href="components/post/post.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 
-        <title>Stingray</title>
-    </head>
-    <body ng-app="stingrayApp" layout="column">
+  <!-- App styles -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="components/menubar/menubar.css">
+  <link rel="stylesheet" href="components/landing/landing.css">
+  <link rel="stylesheet" href="components/near/near.css">
+  <link rel="stylesheet" href="components/search/search.css">
+  <link rel="stylesheet" href="components/post/post.css">
 
-        <sr-menubar></sr-menubar>
+  <title>Stingray</title>
+</head>
 
-        <ng-view></ng-view>
+<body ng-app="stingrayApp" layout="column">
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-         <script>
-           !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-           (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-           r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-           }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <sr-menubar></sr-menubar>
 
-           ga('create', 'UA-XXXXX-X');
-           ga('send', 'pageview');
-        </script>
+  <ng-view></ng-view>
 
-        <!-- JQuery -->
-        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    ! function(A, n, g, u, l, a, r) {
+      A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+          (A[l].q = A[l].q || []).push(arguments)
+        }, A[l].l = +new Date, a = n.createElement(g),
+        r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        <!-- Bootstrap -->
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="../bower_components/bootstrap/js/collapse.js"></script>
-        <script src="../bower_components/bootstrap/js/transition.js"></script>
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
 
-        <!-- Angular JS -->
-        <script src="../bower_components/angular/angular.min.js"></script>
-        <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
-        <script src="../bower_components/angular-route/angular-route.min.js"></script>
-        <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+  <!-- JQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
-        <!-- App scripts -->
+  <!-- Bootstrap -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../bower_components/bootstrap/js/collapse.js"></script>
+  <script src="../bower_components/bootstrap/js/transition.js"></script>
 
-        <!-- Main app script -->
-        <script src="app.js"></script>
+  <!-- Angular JS -->
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+  <script src="../bower_components/angular-route/angular-route.min.js"></script>
+  <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 
-        <!-- Menu bar -->
-        <script src="components/menubar/menubar.directive.js"></script>
+  <!-- App scripts -->
 
-        <!-- Landing page -->
-        <script src="components/landing/landing.controller.js"></script>
+  <!-- Main app script -->
+  <script src="app.js"></script>
 
-        <!-- Near page -->
-        <script src="components/near/near.controller.js"></script>
+  <!-- Facebook scripts -->
+  <script src="components/facebook/facebook.sdk.js"></script>
+  <script src="components/facebook/facebook-button.directive.js"></script>
 
-        <!-- Search page -->
-        <script src="components/search/search.controller.js"></script>
+  <!-- Menu bar -->
+  <script src="components/menubar/menubar.directive.js"></script>
 
-        <!-- Post page -->
-        <script src="components/post/post.controller.js"></script>
+  <!-- Landing page -->
+  <script src="components/landing/landing.controller.js"></script>
 
-    </body>
+  <!-- Near page -->
+  <script src="components/near/near.controller.js"></script>
+
+  <!-- Search page -->
+  <script src="components/search/search.controller.js"></script>
+
+  <!-- Post page -->
+  <script src="components/post/post.controller.js"></script>
+
+</body>
+
 </html>
